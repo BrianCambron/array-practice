@@ -4,7 +4,13 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
+ function myFunction(string, integer){
+   let arr = [];
+   for (let i = 0; i < integer; i++) {
+    arr.push(string);
+   }
+   console.log(arr);
+ }
 
 
 
@@ -23,8 +29,7 @@
 
 // Put your answer below -------------------------
 
-
-
+ // arr = ['one','two','three'];
 
 
 
@@ -58,7 +63,6 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
