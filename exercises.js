@@ -31,6 +31,13 @@
 
  // arr = ['one','two','three'];
 
+function reverseFunction(arr){
+   let arr1 = [];
+   for (var i = 0; i < arr.length; i++) {
+     arr1.unshift(arr[i]);
+   }
+   console.log(arr1);
+ }
 
 
 
