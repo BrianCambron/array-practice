@@ -44,6 +44,7 @@ function reverseFunction(arr) {
 
 
 
+
 // -----------------------------------------------
 
 // ---------------------
@@ -58,7 +59,7 @@ function arrFalse(value) {
   let result = value.filter(x => x).join();
   console.log(result);
 }
-arrFalse(arr);
+// arrFalse(arr);
 
 
 
@@ -104,9 +105,15 @@ function nestArray() {
 
 // Put your answer below -------------------------
 
+let myArray = [1,2,3,4,5,4,3]
+let removeDuplicate = myArray.reduce(function (accumulator, currentValue) {
+  if (accumulator.indexOf(currentValue) === -1) {
+    accumulator.push(currentValue)
+  }
+  return accumulator
+}, [])
 
-
-
+console.log(removeDuplicate);
 
 
 
@@ -123,8 +130,15 @@ function nestArray() {
 // ---------------------
 
 // Put your answer below -------------------------
-
-
+  function identicalArr(arr1, arr2){
+    if(arr1 === arr2){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  console.log(identicalArr([1,2,3,4], [1,2,3,4]));
 
 
 
