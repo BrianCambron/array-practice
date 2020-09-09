@@ -71,7 +71,7 @@ function arrFalse(value) {
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+// Define a function that takes an array of nested arrays and returns an object composed of properties equal to each nested array
 // const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
@@ -81,17 +81,10 @@ function arrFalse(value) {
 const myArray = [
   ['name', 'Charlie'],
   ['color', 'brown'],
-  ['age', 10]
-];
+  ['age', 10]];
+//The Object.fromEntries() method transforms a list of key-value pairs into an object.
 
-function nestArray() {
-
-
-}
-
-
-
-
+  const obj = Object.fromEntries(myArray);
 
 
 
@@ -105,6 +98,7 @@ function nestArray() {
 
 // Put your answer below -------------------------
 
+// The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 let myArray = [1,2,3,4,5,4,3]
 let removeDuplicate = myArray.reduce(function (accumulator, currentValue) {
   if (accumulator.indexOf(currentValue) === -1) {
@@ -130,15 +124,20 @@ console.log(removeDuplicate);
 // ---------------------
 
 // Put your answer below -------------------------
-  function identicalArr(arr1, arr2){
-    if(arr1 === arr2){
-      return true;
-    }
-    else {
-      return false;
-    }
+function arraysEqual(a, b) {
+  if (a === b) return true;
+  if (a == null || b == null) return false;
+  if (a.length !== b.length) return false;
+
+  a.sort();
+  b.sort();
+
+  for (var i = 0; i < a.length; ++i) {
+    if (a[i] !== b[i]) return false;
   }
-  console.log(identicalArr([1,2,3,4], [1,2,3,4]));
+  return true;
+}
+  console.log(arraysEqual([1,2,3,4], [1,2,3,4]));
 
 
 
