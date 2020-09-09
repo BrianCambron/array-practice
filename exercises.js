@@ -4,13 +4,13 @@
 // ---------------------
 
 // Put your answer below -------------------------
- function myFunction(string, integer){
-   let arr = [];
-   for (let i = 0; i < integer; i++) {
+function myFunction(string, integer) {
+  let arr = [];
+  for (let i = 0; i < integer; i++) {
     arr.push(string);
-   }
-   console.log(arr);
- }
+  }
+  console.log(arr);
+}
 
 
 
@@ -29,15 +29,15 @@
 
 // Put your answer below -------------------------
 
- // arr = ['one','two','three'];
+// arr = ['one','two','three'];
 
-function reverseFunction(arr){
-   let arr1 = [];
-   for (var i = 0; i < arr.length; i++) {
-     arr1.unshift(arr[i]);
-   }
-   console.log(arr1);
- }
+function reverseFunction(arr) {
+  let arr1 = [];
+  for (var i = 0; i < arr.length; i++) {
+    arr1.unshift(arr[i]);
+  }
+  console.log(arr1);
+}
 
 
 
@@ -52,7 +52,13 @@ function reverseFunction(arr){
 
 // Put your answer below -------------------------
 
+// arr = [null, undefined, 1, 2, 3, 4]
 
+function arrFalse(value) {
+  let result = value.filter(x => x).join();
+  console.log(result);
+}
+arrFalse(arr);
 
 
 
@@ -71,6 +77,16 @@ function reverseFunction(arr){
 
 // Put your answer below -------------------------
 
+const myArray = [
+  ['name', 'Charlie'],
+  ['color', 'brown'],
+  ['age', 10]
+];
+
+function nestArray() {
+
+
+}
 
 
 
@@ -87,7 +103,6 @@ function reverseFunction(arr){
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
@@ -117,7 +132,6 @@ function reverseFunction(arr){
 
 
 
-
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -138,7 +152,6 @@ function reverseFunction(arr){
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
