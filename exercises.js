@@ -84,9 +84,11 @@ const myArray = [
   ['age', 10]];
 //The Object.fromEntries() method transforms a list of key-value pairs into an object.
 
-  const obj = Object.fromEntries(myArray);
-
-
+  function myFunction2(arr){
+    obj = Object.fromEntries(myArray);
+    return obj;
+}
+console.log(myFunction2(myArray));
 
 
 // -----------------------------------------------
